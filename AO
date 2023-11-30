@@ -1,0 +1,16 @@
+//
+//  AlignmentGuide.swift
+//  LearningSwiftUI
+//
+//  Created by Aliaksei Kasyanik on 30.01.23.
+//
+
+import SwiftUI
+
+struct AlignmentGuideView: View {
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("Number")
+                .alignmentGuide(.leading) { _ in 30 }
+                .overlay {
